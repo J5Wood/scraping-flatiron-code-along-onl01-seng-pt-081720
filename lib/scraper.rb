@@ -19,7 +19,12 @@ class Scraper
   def get_courses
     self.get_page.css(".post")
   end
-  
+
+  def make_courses
+
+  end
+
+
   def print_courses
     self.make_courses
     Course.all.each do |course|
